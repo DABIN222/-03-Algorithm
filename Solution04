@@ -1,0 +1,64 @@
+package al01_basic;
+
+public class Solution04 {
+/*
+ 1. 1~100까지의 난수를 50개 만들어 합을 구하라.
+ 2. 한줄에 6개의 값을 난수를 출력하고 
+ 3. 마지막줄에 합을 출력한다.
+ 
+ 실행
+ 15 65 19 54 95 24
+ 69 25 31 69 42 26
+  2  8 25 62 95 32
+ :
+ :
+ :
+ 40 65
+ 합=7484 
+ 
+ */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+//		내가		
+//		int a [] = new int[50];
+//		int b [] = new int[6];
+//	
+//		int sum=0;
+//		
+//		for(int i=0; i<a.length; i++) {
+//		
+//			a[i] = (int)(Math.random()*100);
+//			sum += a[i];
+//			
+//			for(int j=0; j<a.length; j++) {
+//				b[i] = a[i];
+//				
+//			}
+//			System.out.print(b[i]+" ");
+//			
+//		}
+//		System.out.println("합:"+sum);
+		
+		
+		
+		// 강사님
+		int s=0;
+		for(int i=1; i<=50; i++) {
+			int nan = (int)(Math.random()*100)+1;//	난수
+			System.out.printf("%3d ",nan);//	출력
+			s+=nan;//	합
+			if(i%6==0){	//	줄바꿈
+				System.out.println();
+			}
+			
+			
+		}
+		//	합출력
+		System.out.println("\n합="+s);
+		
+		
+	}
+
+}
